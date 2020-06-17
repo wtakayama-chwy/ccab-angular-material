@@ -1,0 +1,11 @@
+.form-wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+
+    @media (max-width: 520px) {
+        width: 90%;
+    }
+    .mat-form-field + .mat-form-field {
+        margin-left: 1em;
+    }
+}

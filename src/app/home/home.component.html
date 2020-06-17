@@ -1,0 +1,39 @@
+<div class="form-wrapper">
+
+    <ccab-search (onTyping)="filter = $event" [value]="filter"></ccab-search>
+
+    <mat-accordion *ngFor="let user of users | filterByUser: filter">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    {{user.id}}
+                </mat-panel-title>
+                <mat-panel-title>
+                    {{user.name}}
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <div class="user-details" (click)="getId(user.id)">
+                <mat-form-field appearance="outline">
+                    <mat-label>Usuário</mat-label>
+                    <input matInput value="{{user.username}}" readonly type="text">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>E-mail</mat-label>
+                    <input matInput value="{{user.email}}" readonly type="email">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Telefone</mat-label>
+                    <input matInput value="{{user.phone}}" readonly type="tel">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Cidade</mat-label>
+                    <input matInput value="{{user.address.city}}" readonly type="text">
+                </mat-form-field>
+            </div>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
