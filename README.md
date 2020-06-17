@@ -1,27 +1,58 @@
-# CCABFrontend
+# CCAB Test
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+<h3 align="center">
+    <img alt="Logo" title="#logo" width="300px" src="https://ceoagro.com.br/wp-content/uploads/2020/06/camaraarabe.jpg">
+    <br><br>
+    <b>CCAB</b>  
+    <br>
+</h3>
 
-## Development server
+<p align="center">
+  <a href="https://www.ccab.org.br/">
+    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made-angular--material-red">
+  </a>
+  <a>
+  <img alt="License" src="https://img.shields.io/badge/license-mit-blueviolet">
+  <br><br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## :triangular_flag_on_post: What is it? 
+  Create a responsive single page application using Angular, consuming webservice (GET) provided on a simple API and filtering data for each user. It was developed using Angular to create components, Angular Material for styling, API services using HTTP method.
 
-## Code scaffolding
+  <h3 align="center"> :iphone: Demo on Mobile: </h3>
+  <p align="center">
+    <img src="https://media.giphy.com/media/kbbvTpXKMrlr0swilt/giphy.gif" width="600px" align="center" alt="demo-mobile">
+  </p>
+  
+  <h3 align="center"> :computer: Demo on Desktop: </h3>
+  <p align="center">
+    <img src="https://media.giphy.com/media/iIklca0JRwydomvju0/giphy.gif" width="600px" align="center" alt="demo-desktop">
+  </p>
+  
+## :fireworks: Developing Tools: 
+  - Angular v.9.1 (Frontend)
+  - TypeScript
+  - RXJS
+  - Angular Material
+  - VSCode (Editor)
+  - Firefox Devtools
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## :rocket: Goal:
+  Create a responsive single page application using Angular, consuming webservices (GET) that are available in API link
 
-## Build
+## :chart_with_upwards_trend: What I've learned or improved on my knowledge: 
+  - Use angular material with custom theme
+  
+## :feet: How to clone or run?
+  - Download the zip or clone using github
+  - There's a frontend folder
+  - In the main folder run in your command line ``` npm start ```
+  - Open your browser in: http://localhost:4200
+ 
+## :metal: Contributions
+Pull requests are always welcomed. For major alterations please think about openning an issue first.
+Any improvments advices would be great, don't hesitate on contacting me :smile:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## License
+- Project 100% solo - concluded in 3 days. 
+- MIT License - Copyright (c) 2020 william-takayama
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
