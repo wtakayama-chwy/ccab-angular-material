@@ -1,0 +1,8 @@
+<mat-form-field>
+    <mat-label>
+        <mat-icon>search_bar</mat-icon>
+        Procurar Usuário
+    </mat-label>
+    <input matInput type="search" autofocus placeholder="Buscar usuário" (keyup)="debounce.next($event.target.value)"
+        [value]="value">
+</mat-form-field>
