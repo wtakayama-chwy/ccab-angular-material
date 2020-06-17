@@ -1,0 +1,13 @@
+.toolbar {
+    min-height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        height: 3em;
+    }
+}
