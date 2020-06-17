@@ -1,0 +1,71 @@
+<mat-tab-group [backgroundColor]="'accent'" [color]="'accent'" mat-stretch-tabs class="stretched-tabs mat-elevation-z4"
+    animationDuration="0ms">
+    <mat-tab label="Usuário">
+        <div class="content">
+            <div>
+                <mat-list-item>
+                    <strong>ID: </strong>
+                    {{detailedUser?.id}}
+                </mat-list-item>
+                <mat-list-item>
+                    <strong>Nome: </strong>
+                    {{detailedUser?.name}}
+                </mat-list-item>
+                <mat-list-item>
+                    <strong>Username: </strong>
+                    {{detailedUser?.username}}
+                </mat-list-item>
+            </div>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+                <strong>Email: </strong>
+                {{detailedUser?.email}}
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+                <strong>Telefone: </strong>
+                {{detailedUser?.phone}}
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+                <strong>Website: </strong>
+                {{detailedUser?.website}}
+            </mat-list-item>
+            <mat-divider></mat-divider>
+        </div>
+    </mat-tab>
+    <mat-tab label="Endereço">
+        <div class="content">
+            <mat-list-item>
+                Rua {{detailedUser.address?.street}}, {{detailedUser.address?.suite}}
+            </mat-list-item>
+            <mat-list-item>
+                Cidade: {{detailedUser.address?.city}} - ZIP: {{detailedUser.address?.zipcode}}
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+                <strong>Latitude: </strong>
+                {{detailedUser.address?.geo.lat}}
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+                <strong>Longitude: </strong>
+                {{detailedUser.address?.geo.lng}}
+            </mat-list-item>
+            <mat-divider></mat-divider>
+        </div>
+    </mat-tab>
+    <mat-tab label="Empresa">
+        <div class="content">
+            <mat-list-item>
+                <strong>Empresa: </strong>{{detailedUser.company?.name}} - <i>{{detailedUser.company?.catchPhrase}}</i>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+                <strong>BS: </strong>
+                {{detailedUser.company?.bs}}
+            </mat-list-item>
+            <mat-divider></mat-divider>
+        </div>
+    </mat-tab>
+</mat-tab-group>

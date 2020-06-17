@@ -1,0 +1,28 @@
+.stretched-tabs {
+    max-width: 800px;
+}
+
+mat-tab-group {
+    margin-top: 2em;
+    margin: auto;
+    width: 40%;
+    font-size: 1rem;
+    font-weight: 300;
+    @media (max-width: 520px) {
+        width: 90%;
+    }
+
+    strong {
+        font-weight: 400;
+    }
+    mat-divider {
+        margin: 1.5em 0;
+    }
+    mat-list-item {
+        text-align: center;
+        line-height: 2em;
+    }
+    .content {
+        padding: 2em 0 0 0;
+    }
+}
